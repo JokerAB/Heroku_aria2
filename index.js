@@ -41,6 +41,7 @@ app.get('/', (req, res) => {
 <button id="downloads">查看下载文件</button>
 <script>
 panel.onclick=function(){
+	('查找值rpc-secret= ' + SECRET)
 	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
 }
 downloads.onclick=function(){
